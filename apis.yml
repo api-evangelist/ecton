@@ -1,7 +1,28 @@
 aid: ecton
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ecton.png
 name: Ecton
-description: Ecton is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ecton, Inc. is an AI-powered patient payments platform focused on reducing the
+  financial stress and financial toxicity that surround healthcare costs. Its
+  flagship product, Toni, is an AI financial counselor that gives patients
+  personalized guidance on medical bills, insurance, and payment options, paired
+  with a Health Savings and Spending Wallet for managing and paying healthcare
+  expenses. Ecton helps healthcare providers strengthen patient relationships,
+  improve treatment adherence, and increase revenue collection. The company is
+  HIPAA-aligned and backed by General Catalyst. Ecton does not currently publish
+  a public developer API or documentation surface; this profile captures its
+  identity and public security posture.
 url: https://raw.githubusercontent.com/api-evangelist/ecton/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,52 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Patient Payments
+- Payments
+- FinTech
+- Financial Wellness
+- Health Savings
+- Revenue Cycle Management
+- Artificial Intelligence
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ecton-domain-security.yml
+- type: Website
+  url: https://www.ecton.io
+- type: About
+  url: https://www.ecton.io/about-us
+- type: Blog
+  url: https://www.ecton.io/blog
+- type: SignUp
+  url: https://www.ecton.io/patient-sign-up-login
+- type: PrivacyPolicy
+  url: https://www.ecton.io/privacy-policy
+- type: TermsOfService
+  url: https://www.ecton.io/terms-of-use
+- type: ChangeLog
+  name: Monthly release notes
+  url: https://guttural-scribe-930.notion.site/Monthly-release-notes-1985a709258f80fa921beccd12ca4dce
+- type: VulnerabilityDisclosure
+  url: https://www.ecton.io/vulnerability-disclosure
+- type: Security
+  url: https://www.ecton.io/vulnerability-disclosure
+- type: Compliance
+  name: HIPAA compliance
+  url: https://www.ecton.io/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ecton-io
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

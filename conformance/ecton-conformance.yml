@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.ecton.io/privacy-policy
+summary: >-
+  Ecton is a healthcare patient-payments platform. Its privacy policy displays a
+  HIPAA compliance badge and states that payment card data is not directly
+  collected or stored (payment processing is delegated to third-party
+  processors). No public API/OpenAPI is available, so cross-cutting API
+  standards (OAuth2/OIDC/RFC 9457/etc.) cannot be derived.
+standards:
+- id: hipaa
+  conforms: true
+  evidence: HIPAA compliance badge displayed on https://www.ecton.io/privacy-policy; company positions as a HIPAA-aligned healthcare payment platform
+- id: soc2
+  conforms: false
+  evidence: not published
+- id: iso-27001
+  conforms: false
+  evidence: not published
+- id: pci-dss
+  conforms: false
+  evidence: card data handled by third-party processors; no direct PCI DSS certification published
